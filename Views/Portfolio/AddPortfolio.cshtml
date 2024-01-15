@@ -1,0 +1,47 @@
+﻿@model EntityLayer.Concrete.Portfolio
+@{
+    Layout = "/Views/Shared/_NewAdminLayout.cshtml";
+    ViewData["Title"] = "AddPortfolio";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Proje Ekleme Sayfası</h3>
+</div>
+@using (Html.BeginForm("AddPortfolio", "Portfolio", FormMethod.Post))
+{
+        <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <form class="forms-sample">
+                        <br />
+                        @Html.Label("Proje Adı")
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.Name)
+                        <br />
+                        <label>Görsel 1</label>
+                        @Html.TextBoxFor(x => x.ProjeUrl, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.ProjeUrl)
+                        <br />
+                        <label>Görsel 2</label>
+                        @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.ImageUrl)
+                        <br />
+                        <label>Platform</label>
+                        @Html.TextBoxFor(x => x.Platform, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.Platform)
+                        <br />
+                        <label>Durum</label>
+                        @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.Status)
+                        <br />
+                        <label>Ücret</label>
+                        @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.Price)
+                        <br />
+                        <button class="btn btn-outline-primary">Kaydet</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+   

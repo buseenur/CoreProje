@@ -1,0 +1,25 @@
+﻿@model EntityLayer.Concrete.WriterMessage
+
+@{
+    Layout = "/Views/Shared/_NewAdminLayout.cshtml";
+    ViewData["Title"] = "AdminMessageSend";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Yeni Mesaj Gönederme Paneli</h3>
+</div>
+@using (Html.BeginForm("AdminMessageSend", "AdminMessageController", FormMethod.Post))
+{
+    <br />
+    @Html.Label("Konu")
+    @Html.TextBoxFor(x => x.Subject, new { @class = "form-control" })
+    <br />
+    <label>Alıcı</label>
+    @Html.TextBoxFor(x => x.Receiver, new { @class = "form-control" })
+    <br />
+    <label>Mesaj</label>
+    @Html.TextAreaFor(x => x.Content, 8, 3, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-primary">Gönder</button>
+    @*<button class=" btn btn-outline-light">İptal</button>*@
+}

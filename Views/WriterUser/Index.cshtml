@@ -1,0 +1,50 @@
+﻿@using EntityLayer.Concrete
+@model List<WriterUser>
+@{
+    Layout = "/Views/Shared/_NewAdminLayout.cshtml";
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="col-md-6">
+    <div class="p-2">
+        <button type="button" id="getlistall" class="btn btn-outline-primary">Verileri Getir</button>
+        <button type="button" id="getlistall" class="btn btn-outline-info">Kaydet</button>
+    </div>
+</div>
+
+<h4 class="text-center"> Yazar Listesi</h4>
+<div class="p-2" id="listuser">
+    veriler gelecek
+</div>
+<br />
+<div class="col-md-12">
+    <input type="text" class="form-control" id="inpname" placeholder="Ad" />
+    <br />
+    <input type="text" class="form-control" id="inpsurname" placeholder="Soyad" />
+    <br />
+    <input type="text" class="form-control" id="inpusername" placeholder="Kullanıcı Adı" />
+    <br />
+    <input type="email" class="form-control" id="inpmail" placeholder="Email" />
+ 
+</div>
+
+@section Scripts
+{
+    <script>
+        $("#getlistall").click(function(){
+            $.ajax({
+                contentType: "application/json", //içeriğin türü
+                dataType: "json",
+                type: "Get",
+                url: "/WriterUser/ListUser/",
+
+                success: function (funk) {//işlemler başarılıysa bir fonksiyon döndürüyoruz
+                    let users = jQuery.parseJSON(funk) //aldığımız verileri jsona döndürüyoruz
+                    console.log(users);
+                }
+            });
+        });
+    </script>
+}
+<script src="~/lib/jquery/dist/jquery.js"></script>

@@ -1,0 +1,9 @@
+/Users/busenurozturan/Projects/CoreProje/CoreProje/obj/Release/net7.0/CoreProjeUI.csproj.AssemblyReference.cache
+/Users/busenurozturan/Projects/CoreProje/CoreProje/obj/Release/net7.0/CoreProjeUI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/busenurozturan/Projects/CoreProje/CoreProje/obj/Release/net7.0/CoreProjeUI.AssemblyInfoInputs.cache
+/Users/busenurozturan/Projects/CoreProje/CoreProje/obj/Release/net7.0/CoreProjeUI.AssemblyInfo.cs
+/Users/busenurozturan/Projects/CoreProje/CoreProje/obj/Release/net7.0/CoreProjeUI.csproj.CoreCompileInputs.cache
+/Users/busenurozturan/Projects/CoreProje/CoreProje/obj/Release/net7.0/CoreProjeUI.MvcApplicationPartsAssemblyInfo.cs
+/Users/busenurozturan/Projects/CoreProje/CoreProje/obj/Release/net7.0/CoreProjeUI.MvcApplicationPartsAssemblyInfo.cache
+/Users/busenurozturan/Projects/CoreProje/CoreProje/obj/Release/net7.0/CoreProjeUI.RazorAssemblyInfo.cache
+/Users/busenurozturan/Projects/CoreProje/CoreProje/obj/Release/net7.0/CoreProjeUI.RazorAssemblyInfo.cs
